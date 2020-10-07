@@ -67,7 +67,7 @@ Where Student.name = "Stoyan";
 
 SELECT  student.name as 'Student Name',
         subject.name as 'Subject Name',
-        grade as 'Grade' FROM STUDENT
+        grade as 'Grade' FROM STUDENT as s
 INNER JOIN Grades on student.id = grades.student_id
 INNER JOIN Subject on subject.id = grades.subject_id
 ORDER BY student.name;
